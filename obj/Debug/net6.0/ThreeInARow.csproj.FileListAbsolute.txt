@@ -1,0 +1,15 @@
+D:\myProject\ThreeInARow\bin\Debug\net6.0\ThreeInARow.exe
+D:\myProject\ThreeInARow\bin\Debug\net6.0\ThreeInARow.deps.json
+D:\myProject\ThreeInARow\bin\Debug\net6.0\ThreeInARow.runtimeconfig.json
+D:\myProject\ThreeInARow\bin\Debug\net6.0\ThreeInARow.dll
+D:\myProject\ThreeInARow\bin\Debug\net6.0\ThreeInARow.pdb
+D:\myProject\ThreeInARow\obj\Debug\net6.0\ThreeInARow.csproj.AssemblyReference.cache
+D:\myProject\ThreeInARow\obj\Debug\net6.0\ThreeInARow.GeneratedMSBuildEditorConfig.editorconfig
+D:\myProject\ThreeInARow\obj\Debug\net6.0\ThreeInARow.AssemblyInfoInputs.cache
+D:\myProject\ThreeInARow\obj\Debug\net6.0\ThreeInARow.AssemblyInfo.cs
+D:\myProject\ThreeInARow\obj\Debug\net6.0\ThreeInARow.csproj.CoreCompileInputs.cache
+D:\myProject\ThreeInARow\obj\Debug\net6.0\ThreeInARow.dll
+D:\myProject\ThreeInARow\obj\Debug\net6.0\refint\ThreeInARow.dll
+D:\myProject\ThreeInARow\obj\Debug\net6.0\ThreeInARow.pdb
+D:\myProject\ThreeInARow\obj\Debug\net6.0\ThreeInARow.genruntimeconfig.cache
+D:\myProject\ThreeInARow\obj\Debug\net6.0\ref\ThreeInARow.dll
