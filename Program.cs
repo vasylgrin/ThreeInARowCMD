@@ -17,14 +17,10 @@
 
             while (true)
             {
-                CheckForHorizontal();
-                CheckForVertical();
-
-                Console.WriteLine($"(counter: {counterOfOperation}). Позначили місця де було дублювання.");
-                PrintMatrix();
-
-                if (isExistChangeNum(counterOfOperation))
+                if (CheckForHorizontal() | CheckForVertical())
                 {
+                    Console.WriteLine($"(counter: {counterOfOperation}). Позначили місця де було дублювання.");
+                    PrintMatrix();
                     Console.WriteLine("Щоб продовжити натисни Enter.");
                     Console.ReadLine();
 
@@ -93,8 +89,9 @@
         /// <summary>
         /// Перевіряє чи є дублювання по вертикалі.
         /// </summary>
-        private static void CheckForVertical()
+        private static bool CheckForVertical()
         {
+            bool isOK = false;
             int value = 0;
 
             for (int widht = 0; widht < 9; widht++)
@@ -129,16 +126,20 @@
                             height++;
                         }
                         height += 2;
+                        isOK = true;
                     }
                 }
             }
+
+            return isOK;
         }
 
         /// <summary>
         /// Перевіряє чи є дублювання по горизонталі.
         /// </summary>
-        private static void CheckForHorizontal()
+        private static bool CheckForHorizontal()
         {
+            bool isOK = false;
             int value = 0;
 
             for (int height = 0; height < 9; height++)
@@ -176,26 +177,12 @@
                             widht++;
                         }
                         widht += 2;
+                        isOK = true;
                     }
                 }
             }
-        }
 
-        /// <summary>
-        /// Перевіряє чи є хоча б один елемент для зміни.
-        /// </summary>
-        /// <param name="counterOfOperation">Кількість змін.</param>
-        /// <returns>true - якщо є хоча б один елемент зі значенням -1, false - якщо жодного елмента зі значенням -1 не знайдено.</returns>
-        private static bool isExistChangeNum(int counterOfOperation)
-        {
-            if (counterOfOperation == 0)
-                return true;
-            foreach (var item in MainArray)
-            {
-                if (item == -1)
-                    return true;
-            }
-            return false;
+            return isOK;
         }
 
         /// <summary>
